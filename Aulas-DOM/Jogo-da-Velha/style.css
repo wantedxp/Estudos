@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e2dcdca9;
+}
+.container {
+    min-height: 100vh;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #17b117;
+    color: #fff;
+    font-size: 16px;
+}
+.inputs {
+    padding: 60px; 
+}
+.inputs :placeholder-shown {
+    background-color: #17b117;
+}
+.inputs ::placeholder {
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+.inputs label {
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#currentPlayer {
+    font-size: 26px
+}
+h1 {
+    text-align: center;
+}
+
+td {
+    bottom: 20px;
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgb(81, 87, 87);
+}
+
+button {
+    margin-left: 10px;
+    background-color: #17b117;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.winner {
+    background-color: #90ee90;
+}
+
+.tie {
+    background-color: #ffd700;
+}
