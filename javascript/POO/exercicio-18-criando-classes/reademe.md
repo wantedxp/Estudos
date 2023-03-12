@@ -7,7 +7,7 @@
     - um atributo **email**, atribuível na instanciação
     - um atributo **password**, atribuível na instanciação
     - um método login, que tem como parâmetros um email e uma senha e deve comparar esses parâmetros com o email e a senha do usuário e mostrar uma mensagem no console dizendo se o login foi bem sucedido ou não
-- **Product**, que deverá possuir:
+-   **Product**, que deverá possuir:
     - um atributo **name**, atribuível na instanciação
     - um atributo **description**, atribuível na instanciação
     - um atributo **price**, atribuível na instanciação

@@ -4,7 +4,7 @@ class Product {
         this.description = description
         this.price = price
         this.inStock = 0
-        
+
     }
 
     addOnSctock(quantity) {
@@ -12,6 +12,13 @@ class Product {
     }
 
     calculateDiscout(percent) {
-        return this.price * ((100 - percent) / 100) 
+        return this.price * ((100 - percent) / 100)
     }
 }
+
+const ring = new Product("Ring", "...", 80)
+
+const priceWithDiscout = ring.calculateDiscout(15)
+
+console.log(ring)
+console.log(priceWithDiscout)
