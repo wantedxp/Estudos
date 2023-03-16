@@ -1,24 +1,24 @@
 class Product {
-    constructor(name, description, price) {
+    constructor(name, description, price, inStock) {
         this.name = name
         this.description = description
         this.price = price
         this.inStock = 0
-
     }
 
-    addOnSctock(quantity) {
+    addToStock(quantity) {
         this.inStock += quantity
     }
 
-    calculateDiscout(percent) {
-        return this.price * ((100 - percent) / 100)
+    calculateDiscount(discount) {
+        return this.price * ((100 - discount) / 100)
     }
 }
 
-const ring = new Product("Ring", "...", 80)
 
-const priceWithDiscout = ring.calculateDiscout(15)
+const tv = new Product('Smart Tv', 'Smart tv, 59 Inches, Brand Sansung', 5600)
 
-console.log(ring)
-console.log(priceWithDiscout)
+tv.addToStock(30)
+
+console.log(tv)
+console.log(tv.calculateDiscount(15))

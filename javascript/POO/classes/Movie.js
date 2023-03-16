@@ -1,6 +1,9 @@
-class Anime {
-    constructor(title) {
+class Book {
+    constructor(title, pages, author) {
         this.title = title
+        this.pages = pages
+        this.author = author
+        this.published = false
     }
 
     publish() {
@@ -8,10 +11,9 @@ class Anime {
     }
 }
 
-const jujutsoKaisen = new Anime("Jujutso Kaisen")
-const shingekiNoKyojin = new Anime("Shingeki no Kyojin")
+const eragon = new Book('Eragon', 486, 'Crhis')
 
-jujutsoKaisen.publish()
-
-console.log(jujutsoKaisen)
-console.log(shingekiNoKyojin)
+const eldest = new Book('Eldest', 350, 'Crhis')
+eragon.publish()
+console.log(eragon)
+console.log(eldest)
