@@ -27,5 +27,22 @@ const user = {
 
 const myAccount = new Account(user)
 
-console.log(myAccount)
-console.log(myAccount.getBalance('flp.campos@gmail.com', '1234'))
+// console.log(myAccount)
+// console.log(myAccount.getBalance('flp.campos@gmail.com', '1234'))
+
+class Person {
+    #name
+    constructor(name, age, ocupation) {
+        this.#name = name
+        this.age = age
+        this.ocupation = ocupation
+    }
+
+    getName() {
+        return this.#name
+    }
+}
+
+const person = new Person('Filipe', 29, 'Student')
+
+console.log(person.getName())
