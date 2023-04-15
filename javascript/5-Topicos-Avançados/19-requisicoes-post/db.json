@@ -1,0 +1,46 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "title": "Olá, mundo!",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus inventore voluptatem, eum repellat sed officiis aliquam",
+      "author": "Isaac"
+    },
+    {
+      "id": 2,
+      "title": "Requisições POST com Javascript",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus inventore voluptatem, eum repellat sed officiis aliquam",
+      "author": "Isaac"
+    },
+    {
+      "id": 3,
+      "title": "Testando",
+      "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam minus inventore voluptatem, eum repellat sed officiis aliquam",
+      "author": "Filipe"
+    },
+    {
+      "title": "Aprendendo Api's",
+      "author": "Filipe Campos",
+      "content": "Aqui iremos aprender sobre requisições GET e POST.",
+      "id": 4
+    },
+    {
+      "title": "Testando a nova Api",
+      "author": "Filipe Campos",
+      "content": "Realizando mais um teste.",
+      "id": 5
+    },
+    {
+      "title": "meu sexto post",
+      "author": "Filipe Campos",
+      "content": "até que enfim",
+      "id": 6
+    },
+    {
+      "title": "Olá mundo",
+      "author": "Thiago",
+      "content": "Lorem ipisum",
+      "id": 7
+    }
+  ]
+}

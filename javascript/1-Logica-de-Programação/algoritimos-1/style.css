@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    width: 40%;
+    gap: 15px;
+    align-items: center;
+}
