@@ -1,9 +1,33 @@
-let options = prompt('Informe a opção desejada: ' + '\n 1-Saque ' + '\n2-Depósito ' + '\n 3-ransferência ' + '\n 4-Pix' + '\n5-Encerrar')
+let options;
 
 do {
-    alert('A opção selecionada foi de ' + options)
+    options = prompt('Menu interativo ' +
+        '\n1-Saque' +
+        '\n2-Depósito' +
+        '\n3-Transferência' +
+        '\n4-Pix' +
+        '\n5-Encerrar');
 
-    options = prompt('Selecione outra opçao' + '\n 1-Saque ' + '\n2-Depósito ' + '\n 3-ransferência ' + '\n 4-Pix' + '\n5-Encerrar')
-} while (options != '5')
+    switch (options) {
+        case '1':
+            alert('Você seleciou a opçao Saque')
+            break;
+        case '2':
+            alert('Você seleciou a opçao Depósito')
+            break;
+        case '3':
+            alert('Você seleciou a opçao Transferência')
+            break;
+        case '4':
+            alert('Você seleciou a opçao Pix')
+            break;
+        case '5':
+            alert('Você seleciou a opçao Encerrar')
+            break;
+        default:
+            alert('Informe uma opção válida')
+            break;
+    }
+} while (options !== '5');
 
-alert('O programa foi ecerrado opção ' + options)
+alert('Encerrando programa');
