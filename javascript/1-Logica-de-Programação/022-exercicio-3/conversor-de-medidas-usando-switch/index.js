@@ -1,5 +1,11 @@
 const value = Number(prompt('Informe o valor a ser convertido'))
-const option = prompt('Informe a unidade de conversão desejada ' + '\nmilímetro (mm) ' + '\ncentímetro (cm) ' + '\ndecímetro (dm) ' + '\ndecâmetro (dam) ' + 'hectômetro (hm) ' + '\n quilômetro (km) ')
+const option = prompt('Informe a unidade de conversão desejada ' +
+    '\nmilímetro (mm) ' +
+    '\ncentímetro (cm) ' +
+    '\ndecímetro (dm) ' +
+    '\ndecâmetro (dam) ' +
+    '\nhectômetro (hm) ' +
+    '\nkuilômetro (km) ')
 
 switch (option) {
     case 'mm':

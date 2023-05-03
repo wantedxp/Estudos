@@ -1,10 +1,9 @@
-let number = parseInt(prompt('Informe um numero para ser multiplicado'));
-let i;
+
+const number = parseInt(prompt('Informe um numero'));
 let result = '';
 
-
-for (let i = 1; i < 20; i++) {
-    result += number + ' x ' + i + ' = ' + (number * i) + '\n'
+for (let i = 1; i <= 20; i++) {
+    result += number + ' x ' + i + ' = ' + (number * i) + '\n';
 };
-console.log(result);
+
 alert(result);

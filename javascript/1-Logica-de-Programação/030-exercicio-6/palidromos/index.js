@@ -1,16 +1,12 @@
-const word = prompt('Digite uma palavra para verificarmos se é um palíndromo');
+const word = prompt('Informe uma palavra').toLowerCase();
+let reverseWord = '';
 
-let isPalindrome = true;
+for (i = word.length - 1; i >= 0; i--) {
+    reverseWord += word[i];
+};
 
-for (let i = 0; i < word.length / 2; i++) {
-    if (word[i] !== word[word.length - 1 - i]) {
-        isPalindrome = false;
-        break;
-    }
-}
-
-if (isPalindrome) {
-    alert(word + ' é um palíndromo')
+if (reverseWord === word) {
+    alert('A palavra ' + word + ' é um palíndromo');
 } else {
-    alert(word + ' não é uma palíndromo')
-}
+    alert('A palavra não é um palíndromo ' + reverseWord);
+};

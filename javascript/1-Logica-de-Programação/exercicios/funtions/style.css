@@ -1,0 +1,23 @@
+* {
+    font-family: sans-serif;
+}
+
+.inputs {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    display: block;
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+  
+  .container {
+    margin-left: 300px;
+}
