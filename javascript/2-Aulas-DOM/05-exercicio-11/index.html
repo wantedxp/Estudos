@@ -5,66 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            justify-content: flex-end;
-
-        }
-
-        label,
-        input {
-            display: flex;
-            flex-direction: row;
-            margin: 5px;
-        }
-
-        label {
-            width: 200px;
-        }
-
-        input {
-            width: 150px;
-        }
-
-        button {
-            margin: 5px;
-        }
-
-        #team {
-            align-self: flex-end;
-            margin: 0px 200px 0px 0px;
-            position: relative;
-            bottom: 220px;
-        }
-    </style>
+    <title>Exercicio 11</title>
+    <script src="index.js"></script>
 </head>
 
 <body>
-    <h1>Sistema de Escala de Jogadores</h1>
+    <h3>Escalaçao de jogadores</h3>
+    <label for="playerPosition">Posição:</label>
+    <input type="text" name="playerPosition" id="playerPosition">
 
-    <label for="name">Nome:</label>
-    <input type="text" id="playerName" class="player-name">
+    <label for="playerName">Nome:</label>
+    <input type="text" name="playerName" id="playerName">
 
-    <label for="postion">Posição do jogador:</label>
-    <input type="text" id="playerPosition" class="player-position">
+    <label for="playerNumber">Numero da camisa:</label>
+    <input type="number" name="playerNumber" id="playerNumber">
+    
+    <button id="climbPlayer" onclick="climbPlayer()">Escalar</button>
 
-    <label for="number">Numero da Camisa:</label>
-    <input type="number" id="playerNumber" class="player-number">
-
-    <button onclick="climbPlayer()">Escalar Jogador</button>
-    <button onclick="removePlayer()">Remover Jogador</button>
-
-    <label for="deletePlayer">Numero da camisa:</label>
-    <input type="number" name="deletePlayer" id="deletePlayer">
-
-    <ul id="team">
-        <h2>Lista de Jogadores</h2>
-    </ul>
-
-    <script src="index.js"></script>
+    <h3>Remover jogador</h3>
+    <label for="playerToRemove">Numero da camisa:</label>
+    <input type="number" name="playerToRemove" id="playerToRemove">
+    <button onclick="removePlayer()">Remover</button>
+    
+    <ul id="playerList"></ul>
 </body>
+
 </html>

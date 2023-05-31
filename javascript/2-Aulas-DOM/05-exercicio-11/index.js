@@ -1,31 +1,36 @@
 function climbPlayer() {
-    const itemList = document.getElementById('team')
-    const confirmation = confirm('Dejeja escalar esse jogador?')
+    const playerList = document.querySelector('#playerList')
 
-    const playerName = document.getElementById('playerName').value
-    const playerPosition = document.getElementById('playerPosition').value
-    const playerNumber = document.getElementById('playerNumber').value
+    const confirmation = confirm('Deseja escalar um novo jogador?')
 
     if (confirmation === true) {
-        const playerLi = document.createElement('li')
-        playerLi.innerText = 'Nome: ' + playerName + ' ' + playerPosition + ' (' + playerNumber + ')'
-        playerLi.id = 'playerItem-' + playerNumber
-        itemList.appendChild(playerLi)
+        const newPlayer = document.createElement('li')
+        const playerPostion = document.querySelector('#playerPosition').value
+        const playerName = document.querySelector('#playerName').value
+        const playerNumber = document.querySelector('#playerNumber').value
+        newPlayer.id = 'playerId' + playerNumber
 
-        document.getElementById('playerName').value = ''
-        document.getElementById('playerPosition').value = ''
-        document.getElementById('playerNumber').value = ''
+        newPlayer.innerText = `${playerName} ${playerPostion} (${playerNumber})`
+
+        playerList.appendChild(newPlayer)
+
+        console.log(`${playerNumber}`)
+
+        document.querySelector('#playerPosition').value = ''
+        document.querySelector('#playerName').value = ''
+        document.querySelector('#playerNumber').value = ''
     }
 }
 
 function removePlayer() {
-    const number = document.getElementById('deletePlayer').value
-    const playerToRemover = document.getElementById('playerItem-' + number)
+    const playerNumber = document.querySelector('#playerToRemove').value
 
-    const confirmation = confirm('Deseja mesmo remover esse jogador?')
+    const playerToRemove = document.querySelector('#playerId' + playerNumber)
 
+    const confirmation = confirm('Deseja remover este jogador?')
     if (confirmation === true) {
-        document.getElementById('team').removeChild(playerToRemover)
-        document.getElementById('deletePlayer'). value = ''
+        const playerList = document.querySelector('#playerList').removeChild(playerToRemove)
+
+        document.querySelector('#playerToRemove').value = ''
     }
 }
