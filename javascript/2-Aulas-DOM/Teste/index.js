@@ -1,27 +1,30 @@
-const titleElement = document.querySelector('#title')
-titleElement.style.color = 'blue'
+fetch('https://reqres.in/api/users')
+    .then((res) => res.json())
+    .then(data => {
+        const users = data.data
+        console.log(users)
 
-const ulList = document.createElement('ul')
+        users.forEach((user) => {
+            const userName = `${user.first_name} ${user.last_name}`
 
-let itemList1 = document.createElement('li')
-itemList1.textContent = 'Its Free'
+            const userAvatar = user.avatar
 
-let itemList2 = document.createElement('li')
-itemList2.textContent = 'Its awesome'
+            const userList = document.querySelector('#userList')
+            const p = document.createElement('p')
+            p.innerText = userName
 
-ulList.appendChild(itemList1)
-ulList.appendChild(itemList2)
+            const avatarImg = document.createElement('img')
 
-document.body.appendChild(ulList)
+            avatarImg.src = userAvatar
 
-let button = document.createElement('button');
 
-button.setAttribute('id', 'btn')
+            userList.append(avatarImg, p)
+        })
+    })
 
-button.textContent = 'Click Here'
 
-document.body.appendChild(button)
+    
+    
 
-button.addEventListener('click', () => {
-    alert('Thank you')
-})
+
+

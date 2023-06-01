@@ -1,10 +1,10 @@
 const spaceship = {
     name: 'x-wing',
-    speed: 980
+    speed: 0
 }
 
-function accelerate(spaceship: { name: string; speed: number }, speed: number) {
+function accelerate(spaceship: { name?: string; speed: any }, speed: number) {
     spaceship.speed = speed
 }
 
-accelerate(spaceship, 50)
+console.log(accelerate(spaceship, 50))
