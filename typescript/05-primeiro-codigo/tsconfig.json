@@ -1,7 +1,6 @@
 {
     "compilerOptions": {
-        "outDir": "dist",
-        "outFile": "main.js",
         "watch": true,
+        "outDir": "dist",
     }
 }
