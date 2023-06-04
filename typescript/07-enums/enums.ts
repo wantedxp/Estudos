@@ -3,4 +3,4 @@ enum Roles {
     USER = 'Usuario'
 }
 
-Roles.
+Roles.ADMIN

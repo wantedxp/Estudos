@@ -58,7 +58,7 @@ const firstMenuOption = () => {
     Limite da tripulação: ${crewLimit}`)
 
     if (confirmation === true) {
-        const nave = createSpaceship(name, pilot, crewLimit)
+      createSpaceship(name, pilot, crewLimit)
     } else {
         firstMenuOption()
     }
@@ -80,6 +80,7 @@ const secondMenuOption = () => {
     else {
         secondMenuOption()
     }
+    
 }
 
 const thirdMenuOption = () => {
@@ -100,10 +101,10 @@ const thirdMenuOption = () => {
 const fourtMenuOption = () => {
     for (const spaceship of registeredSpaceships) {
         alert(`Informações das naves registradas.
-        Nome: ${spaceship.name}.
-        Piloto: ${spaceship.pilot}.
-        Tripulação: ${spaceship.crew}.
-        Limite máximo de tripulantes: ${spaceship.crewLimit}`)
+          Nome: ${spaceship.name}.
+          Piloto: ${spaceship.pilot}. 
+          Tripulação: ${spaceship.crew}. 
+          Limite máximo de tripulantes: ${spaceship.crewLimit}`)
     }
 }
 
