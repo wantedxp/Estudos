@@ -1,0 +1,53 @@
+.container img {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    margin: 40px 80px;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.363);
+}
+
+.container h2 {
+    margin-bottom: 10px;
+}
+
+.container p {
+    border-top: 1px solid #0077B6;
+    padding: 10px 0px;
+}
+
+.container p:nth-child(5) {
+    border-bottom: 1px solid #0077B6;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    width: fit-content;
+    display: grid;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.363);
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin: 10px 0px;
+
+}
+
+.btn>a {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    background-image: linear-gradient(to left bottom, #0077b6, #2592c6, #48acd4, #6bc6e1, #90e0ef);
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.363);
+}
+
+.btn>a:hover {
+    margin-left: 2px;
+}

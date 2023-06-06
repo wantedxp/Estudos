@@ -1,0 +1,6 @@
+.app {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-image: linear-gradient(to left bottom, #0077b6, #0086c1, #0096ca, #00a5d1, #00b4d8);
+}

@@ -1,0 +1,12 @@
+* {
+  font-family: Helvetica;
+}
+
+.main {
+  margin: 10px;
+}
+
+button {
+  padding: 2px;
+  margin: 10px 0px 8px 0px;
+}
