@@ -1,0 +1,31 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+  align-items: center;
+}
+
+.wrapper > a {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  background-image: linear-gradient(
+    to left bottom,
+    #0077b6,
+    #2592c6,
+    #48acd4,
+    #6bc6e1,
+    #90e0ef
+  );
+  padding: 10px;
+  margin: 5px;
+  width: 200px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 4px 4px 3px rgba(0, 0, 0, 0.363);
+  cursor: pointer;
+}
+
+.wrapper > a:hover {
+  margin-left: 2px;
+}

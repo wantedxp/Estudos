@@ -1,0 +1,9 @@
+.wrapper p{
+  border-top: 3px solid #0077b6;
+  padding: 10px 0px;
+}
+
+
+.wrapper p:nth-child(3) {
+  border-bottom: 3px solid #0077b6;
+}

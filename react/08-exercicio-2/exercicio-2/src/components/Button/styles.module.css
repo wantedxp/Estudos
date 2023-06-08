@@ -1,17 +1,17 @@
 .btn {
-    background-color: #8AD229;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 10px 20px;
-    border: none;
-    font-size: 1.2em;
-    transition: .4s;
-    cursor: pointer;
-    position: relative;
-    left: 120px;
-    opacity: 0.8;
+  background-color: #8ad229;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px 20px;
+  border: none;
+  font-size: 1.2em;
+  transition: 0.4s;
+  cursor: pointer;
+  position: relative;
+  left: 120px;
+  opacity: 0.8;
 }
 
 .btn:hover {
-    opacity: 2;
+  opacity: 2;
 }

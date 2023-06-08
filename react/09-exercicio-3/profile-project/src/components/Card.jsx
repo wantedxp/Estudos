@@ -1,19 +1,25 @@
+/* eslint-disable react/jsx-no-undef */
 /* eslint-disable react/prop-types */
-import styles from './card.module.css'
+import Title from "./Title";
+import styles from "./card.module.css";
+import ProfileSection from "./Profile/ProfileSection";
+import LinkButtons from "./LinkButtons";
 
-export default function Card({ avatar, name, bio, email, phone, githubUrl, linkedinUrl, instagramUrl }) {
-    return (
-        <div className={styles.container}>
-            <img src={avatar} alt={name} />
-            <h2>{name}</h2>
-            <p>{bio}</p>
-            <p>{email}</p>
-            <p>{phone}</p>
-            <div className={styles.btn}>
-                <a href={githubUrl} target='_blank' rel="noreferrer">GITHUB</a>
-                <a href={linkedinUrl} target='_blank' rel="noreferrer">LINKEDIN</a>
-                <a href={instagramUrl} target='_blank' rel="noreferrer">INSTAGRAM</a>
-            </div>
-        </div>
-    )
+export default function Card(props) {
+  return (
+    <div className={styles.container}>
+      <img src={props.avatar} alt={props.name} />
+      <Title>{props.name}</Title>
+      <div className={styles.btn}>
+        <ProfileSection>
+          <p>{props.bio}</p>
+          <p>{props.phone}</p>
+          <p>{props.email}</p>
+        </ProfileSection>
+        <LinkButtons href={props.githubUrl}>GitHub</LinkButtons>
+        <LinkButtons href={props.linkedinUrl}>LinkedIn</LinkButtons>
+        <LinkButtons href={props.instagramUrl}>Instagram</LinkButtons>
+      </div>
+    </div>
+  );
 }
