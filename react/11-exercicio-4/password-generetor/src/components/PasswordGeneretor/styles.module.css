@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  align-items: center;
+  margin: 10px;
+}
+
+.btnContainer {
+    display: flex;
+    
+}
+
+button {
+  background-color: darkgrey;
+  color: white;
+  border: none;
+ margin: 10px;
+ padding: 8px;
+ border-radius: 10px;
+}
