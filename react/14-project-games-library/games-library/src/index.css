@@ -24,12 +24,7 @@ input {
   padding: 20px;
   background-color: #1f1f1f;
   color: aliceblue;
-  min-height: 90vh;
-  width: 1000px;
-  margin: 20px auto;
-
-  border-radius: 5px;
-
+  min-height: 100vh;
 }
 
 button {

@@ -9,11 +9,8 @@ export default function App() {
     <div className="app">
       <h1>Biblioteca de Jogos</h1>
       <div className="lib-form">
-        {" "}
         <GameForm addGame={addGame} />
       </div>
-      <div className="library">
-        {" "}
         <div className="games">
           {games.map((game) => (
             <Games
@@ -23,8 +20,7 @@ export default function App() {
               onRemove={() => removeGame(game.id)}
             />
           ))}
-        </div>
-      </div>
+        </div>  
     </div>
   );
 }
