@@ -1,0 +1,52 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.lib-form {
+  border-bottom: #201e41 5px solid;
+}
+
+input {
+  background-color: transparent;
+  margin: 10px;
+  border: #efeff4 1px solid;
+}
+
+.app {
+  padding: 20px;
+  background-color: #1f1f1f;
+  color: aliceblue;
+  min-height: 90vh;
+  width: 1000px;
+  margin: 20px auto;
+
+  border-radius: 5px;
+
+}
+
+button {
+  background-color: #201e41;
+  padding: 6px;
+  align-items: center;
+  margin: 5px;
+}
+
+img {
+  border: #201e41 solid 3px;
+  margin: 40px 10px 2px 0px;
+  width: 150px;
+  height: 160px;
+}
+
+.games {
+  display: flex;
+  flex-wrap: wrap;
+}

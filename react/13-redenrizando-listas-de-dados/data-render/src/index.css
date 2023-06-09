@@ -1,0 +1,22 @@
+:root {
+  background-color: rgb(20, 20, 20);
+  color: white;
+}
+
+img {
+  width: 200px;
+}
+
+h1, p {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.app {
+  margin: 40px;
+}

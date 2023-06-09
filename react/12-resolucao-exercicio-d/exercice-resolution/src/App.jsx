@@ -5,7 +5,9 @@ import NumberInput from "./components/NumberInput";
 export default function App() {
   const [password, setPassword] = useState("");
   const [copy, setCopy] = useState("Copiar");
-  const [passwordSize, setPasswordSize] = useState(8);
+  const [customSize, setCustomSize] = useState(8);
+  const [showInput, setShowInput] = useState(false);
+  const passwordSize = showInput ? customSize : 8
 
   function generate() {
     const characters =
@@ -29,11 +31,25 @@ export default function App() {
   return (
     <div className="App">
       <h1>Gerador de senhas</h1>
-      <label htmlFor="passwordSize">Tamanho: </label>
-      <NumberInput
-        passwordSize={passwordSize}
-        setPasswordSize={setPasswordSize}
-      />
+      <div>
+        <label htmlFor="showInput" id="showInput">
+          Customizar tamanho
+        </label>
+        <input
+          type="checkbox"
+          id="showInput"
+          value={showInput}
+          onChange={() => setShowInput((currentState) => !currentState)}
+        />
+      </div>
+      {showInput ? (<div>
+        <label htmlFor="passwordSize">Tamanho: </label>
+        <NumberInput
+          passwordSize={customSize}
+          setPasswordSize={setCustomSize}
+        />
+      </div>) : null}
+      
       <button onClick={generate}>
         Gerar senha de {passwordSize} caracteres
       </button>
