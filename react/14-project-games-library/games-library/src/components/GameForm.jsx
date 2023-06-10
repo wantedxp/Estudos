@@ -50,11 +50,11 @@ export default function GameForm({ addGame }) {
           accept="image/*"
           id="cover"
           name="cover"
-          onChange={handleCoverChange}
+          onChange={handleCoverChange} 
           ref={fileInputRef}
         />
       </div>
-      <button type="submit">Adicionar</button>
+      <button type="submit">+ Adicionar</button>
     </form>
   );
 }
