@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body class="body">
+    <div class="custom-container p-4 ">
+      <div class="d-flex header">
+        <img
+          class="logo"
+          src="icons/SVG/EDITABLE STROKES/9-uranus.svg"
+          alt=""
+          width="80px"
+        />
+        <h1 class="mt-4 ps-4 title">Dark Space</h1>
+      </div>
+      <form class="form">
+        <div class="name">
+          <h2 class="title">Your Name:</h2>
+          <div class="mb-3">
+            <input
+              type="text"
+              class="form-control custom-form"
+              id="floatingFirstName"
+              placeholder="First Name"              
+            />
+            <label for="floatingInput" class="d-none">First Name:</label>
+          </div>
+          <div class="">
+            <input
+            type="text"
+            class="form-control"
+            id="floatingFirstName"
+            placeholder="Last Name"
+            />
+            <label for="floatingInput" class="d-none">Last Name:</label>
+        </div>
+        <div class="gender mt-3">
+          <h2 class="title">Gender:</h1>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <label class="form-check-label" for="flexRadioDefault1">
+                  Homem
+              </label>
+          </div>
+          <div class="form-check">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <label class="form-check-label" for="flexRadioDefault2">
+              Mulher
+              </label>
+          </div>
+          <div class="form-check mb-2">
+              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <label class="form-check-label" for="flexRadioDefault2">
+              Prefiro não informar
+              </label>
+          </div>    
+</div>
+        <div class="tech">
+          <h2 class="title">Fav techs:</h2>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">Angular</label>
+              </div>
+              <div class="form-check form-switch">
+                  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                  <label          class="form-check-label"  for="flexSwitchCheckChecked">
+                  React
+                  </label>
+              </div>
+              <div class="form-check      form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked">
+                Vue
+                </label>
+              </div>
+              <div class="form-check  form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                <label class="form-check-label" for="flexSwitchCheckChecked">
+                Svelt
+                </label>
+              </div>
+        </div>
+        <div class="skills">
+          <h2 class="title"> Skills:</h2>
+          <div class="row">
+            <div class="col">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label"   for="flexCheckDefault">
+                  Self-motivation.
+                </label>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                  Communication
+                  </label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Problem-solving capability
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                  Mathematical skills
+                  </label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                  Creativity
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-4">
+            <button type="button" class="btn btn-outline-light btn-lg">Submit</button>
+          </div>
+      </form>
+    </div>
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>

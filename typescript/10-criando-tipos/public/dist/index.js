@@ -6,17 +6,15 @@ var option;
 option = "No";
 var opt;
 var planet;
-var fetchUsers = function () {
-    return fetch('https://reqres.in/api/users')
-        .then(function (res) { return res.json(); })
-        .then(function (data) { return data.data; });
+function checkPlanet(planet) {
+    if (planet === "Terra") {
+        console.log("Estamos na terra");
+    }
+}
+var greet = function (callbackfn) {
+    var name = "Filipe";
+    callbackfn(name);
+    return name;
 };
-var displayUsers = function () {
-    fetchUsers()
-        .then(function (users) {
-        users.forEach(function (user) {
-            console.log(user.first_name);
-        });
-    });
-};
-displayUsers();
+var nameValue = greet(function (name) { });
+console.log(nameValue);

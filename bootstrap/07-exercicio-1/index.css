@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap");
+
+* {
+  font-family: "Teko", sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+}
+
+.body {
+  background-image: url(image/nebula-space-universe-art-4k-wr-1920x1080.jpg);
+}
+
+.custom-container {
+  background-color: #3a3a3cbb;
+  border-radius: 5px;
+  margin: 40px 0px;
+}
+
+.body {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.title,
+.text {
+  color: white;
+}
+
+.text {
+  font-size: 1.2em;
+}
+
+
+.form-check-label {
+  color: white;
+}
+
