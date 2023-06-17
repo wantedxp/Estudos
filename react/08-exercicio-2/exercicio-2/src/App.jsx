@@ -1,44 +1,28 @@
+import styles from "./App.module.css";
 import Card from "./components/Card";
-import Button from "./components/Button";
-import darkSoulsRemaster from "./assets/JxilRmpXkS3CCXUnr0gZTBOlqso3plaw.jpg";
-import eldenRing from "./assets/elden-ring.webp";
-import darkSouls2 from "./assets/dark-souls-2.jpg";
-import darkSouls3 from "./assets/dark-souls-3.jpg";
 
-function App() {
+import ds1Img from "./assets/JxilRmpXkS3CCXUnr0gZTBOlqso3plaw.jpg";
+import ds2Img from "./assets/dark-souls-2.jpg";
+import ds3Img from "./assets/dark-souls-3.jpg";
+
+export default function App() {
   return (
-    <div>
+    <div className={styles.app}>
       <Card
-        title="DARK SOULS™: REMASTERED"
-        cardImg={darkSoulsRemaster}
-        text={
-          "Mas então, fez-se o fogo. Experimente novamente o jogo aclamado pela crítica e definidor de gênero que foi o início de tudo. Belamente remasterizado, volte a Lordran com detalhes em alta definição a 60fps"
-        }
+        cardImg={ds1Img}
+        title={"Dark Souls Rematered"}
+        text={"Dark souls 1 descprition"}
       />
       <Card
-        title="DARK SOULS™ 2 Scholar Of The First Sin"
-        cardImg={darkSouls2}
-        text={
-          "DARK SOULS™ II: Scholar of the First Sin leva a renomada obscuridade e jogabilidade viciante da franquia a um novo nível. Junte-se à jornada sombria e vivencie encontros com inimigos devastadores, perigos diabólicos e o desafio implacável."
-        }
+        cardImg={ds2Img}
+        title={"Dark Souls 2"}
+        text={"Dark souls 2 descprition"}
       />
       <Card
-        title="DARK SOULS™ 3"
-        cardImg={darkSouls3}
-        text={
-          "DARK SOULS™ continua a ultrapassar seus próprios limites em um ambicioso novo capítulo da série que definiu um gênero e que é aclamada pela crítica. Prepare-se para abraçar a escuridão!"
-        }
+        cardImg={ds3Img}
+        title={"Dark Souls 3"}
+        text={"Dark souls 3 descprition"}
       />
-      <Card
-        title="Elden Ring"
-        cardImg={eldenRing}
-        text={
-          "O NOVO RPG DE AÇÃO E FANTASIA. Levante-se, Maculado, e seja guiado pela graça para portar o poder do Anel Prístino e se tornar um Lorde Prístino nas Terras Intermédias."
-        }
-      />
-      <Button />
     </div>
   );
 }
-
-export default App;

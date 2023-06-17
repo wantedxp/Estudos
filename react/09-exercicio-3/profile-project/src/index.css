@@ -1,7 +1,7 @@
 .app {
   display: grid;
   place-content: center;
-  min-height: 100vh;
+  height: 100vh;
   background-image: linear-gradient(
     to left bottom,
     #0077b6,
