@@ -1,9 +1,9 @@
-import PasswordGenerator from "./components/PasswordGeneretor";
+import PasswordGeneretor from "./components/PasswordGeneretor";
 
 function App() {
   return (
     <div className="App">
-      <PasswordGenerator></PasswordGenerator>;
+      <PasswordGeneretor />
     </div>
   );
 }

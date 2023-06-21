@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { useState } from "react";
 import Buttons from "../Buttons";
 import Title from "../Title";
 import styles from "./styles.module.css";
@@ -8,8 +9,10 @@ const linkedinUrl = "https://www.linkedin.com/in/filipe-campos-524a82256/";
 const instagramUrl = "https://www.instagram.com/flp.campos/";
 
 export default function Card(props) {
+  const [followText, setFallowText] = useState("Follow");
+
   function followClick() {
-    alert(`Seguindo ${props.name}`);
+    setFallowText("Following");
   }
   return (
     <div className={styles.cardContainer}>
@@ -18,7 +21,7 @@ export default function Card(props) {
       </div>
       <Title>
         <span>{props.name}</span>
-        <button onClick={followClick}>Follow</button>
+        <button onClick={followClick}>{followText}</button>
       </Title>
       <p>{props.bio}</p>
       <p>{props.phone}</p>

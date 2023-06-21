@@ -1,17 +1,12 @@
-import "./App.css";
+import "../src/App.css";
 import useCounter from "./hooks/useCounter";
 
-function App() {
+export default function App() {
   const counter = useCounter();
 
   return (
-    <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={counter.increment}>count is {counter.count}</button>
-      </div>
-    </>
+    <div>
+      <button onClick={counter.increment}>{counter.count}</button>
+    </div>
   );
 }
-
-export default App;

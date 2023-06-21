@@ -10,4 +10,17 @@ html {
   min-height: 100vh;
   background-color: rgb(56, 55, 53);
   color: white;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+button {
+  margin: 20px;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
 }
